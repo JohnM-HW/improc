@@ -59,7 +59,23 @@ This Flask application provides endpoints for processing images, including resiz
 2. Use the following endpoints to process images:
 
 ### Process Image
-***Endpoint:*** /process_image
-Method: POST
-Description: Processes an image from a URL and uploads it to Google Cloud Storage.
-Request Body:
+**Endpoint:** /process_image
+**Method:** POST
+**Description:** Processes an image from a URL and uploads it to Google Cloud Storage.
+**Request Body:**
+```
+{
+  "image_url": "https://example.com/image.jpg",
+  "size": [800, 600],
+  "sharpen": false,
+  "grayscale": false,
+  "rotate": null,
+  "blur": null,
+  "watermark_text": "Sample Watermark",
+  "watermark_position": [50, 50],
+  "watermark_opacity": 128,
+  "watermark_font_size": 36,
+  "convert_to_webp": false
+}
+```
+
