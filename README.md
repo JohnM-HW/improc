@@ -36,8 +36,9 @@ This Flask application provides endpoints for processing images, including resiz
 
 2. Create and activate a virtual environment:
    ```python -m venv venv
-source venv/bin/activate
-   ``` 
+    source venv/bin/activate
+   ```
+
 3. Install the required packages:
    ```
    pip install -r requirements.txt
@@ -57,7 +58,7 @@ source venv/bin/activate
 
 2. Use the following endpoints to process images:
 
-Process Image
+### Process Image
 Endpoint: /process_image
 Method: POST
 Description: Processes an image from a URL and uploads it to Google Cloud Storage.
