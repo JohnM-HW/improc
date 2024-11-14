@@ -1,0 +1,4 @@
+Flask
+Pillow
+requests
+google-cloud-storage
